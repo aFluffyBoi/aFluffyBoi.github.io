@@ -22,6 +22,9 @@
                 <li>
                     <a href="#vacation">Planning a Vacation</a>
                 </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -57,6 +60,67 @@
                     <p>I start at <time datetime="18:30">6:30PM</time> and I write code for <time datetime="PT4H">4 hours</time></p>
                    </details> 
                 </aside>
+                <br>
+                <table>
+                    <caption>My Daily Schedule</caption>
+                    <thead>
+                        <tr>
+                            <th>&nbsp;</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Activty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Afternoon / Evening</th>
+                            <td>
+                                <time datetime="18:30">6:30PM</time>-<time datetime="22:30">10:30PM</time>
+                            </td>
+                            <td>Write Code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>
+                                <time datetime="22:30">10:30PM</time>-<time datetime="23:00">11PM</time>
+                            </td>
+                            <td>Eat Food</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Sleep Time</th>
+                            <td>
+                                <time datetime="23:00">11PM</time>-<time datetime="06:30">6:30AM</time>
+                            </td>
+                            <td>Sleep</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="06:30">6:30AM</time>-<time datetime="07:00">7:00AM</time>
+                            </td>
+                            <td>Eat Food</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Noon / Afternoon</th>
+                            <td>
+                                <time datetime="08:00">8:00AM</time>-<time datetime="07:00">6:30PM</time>
+                            </td>
+                            <td>Game</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2" scope="col">DEPENDS</th>
+                            <td rowspan="2">All Other Times</td>
+                            <td>Free Time</td>
+                        </tr>
+                        <tr>
+                            <td>Food, Sleep & Hygiene</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Total Expenses: 0$ (Rounded to hundreds)</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </section>
         </article>
         
@@ -97,6 +161,52 @@
                     <dd>These are also cold.</dd>
                 </dl>
             </section>
+        </article>
+
+        <hr>
+
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Mark" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Johnson" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="+000 555 555 555" required>
+                </p>
+                <p>
+                    <label for="decade">Favorite Decade:</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                </p>
+                <p>
+                    <label for="coffee">Favorite Coffee:</label>
+                    <select name="coffee" id="coffee">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                        <optgroup label="Espresso Drinks">
+                            <option value="latte">Latte</option>
+                            <option value="cappuccino">Cappuccino</option>
+                            <option value="cortado">Cortado</option>
+                            <option value="americano">Americano</option>
+                        </optgroup>
+                        <option value="other">Other</option>
+                    </select>
+                </p>
+            </form>
         </article>
     </main>
 
